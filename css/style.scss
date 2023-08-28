@@ -82,6 +82,17 @@
 						}
 					}
 				}
+				&.friends {
+					width: 15%;
+					> ul {
+						justify-content: space-between;
+					}
+				} //end appTop_icon.friends
+				&.settings {
+					ul {
+						justify-content: flex-end;
+					}
+				}
 			} //end appTop_icon
 		} //end appTop
 		> .chatBord {
@@ -91,11 +102,11 @@
 					width: 100%;
 					margin-bottom: 20px;
 					padding: 0 20px;
-					&:hover {
-						background-color: #e66767;
-					}
 
 					> a {
+						&:hover {
+							background-color: #fefbe3;
+						}
 						position: relative;
 						display: flex;
 
@@ -130,9 +141,74 @@
 				} //end li
 			} //.chatList
 		} //end .chatBord
+		> section.menu {
+			height: 95%;
+			margin-left: 20px;
+			ul {
+				margin-top: 40px;
+
+				li {
+					height: 50px;
+					font-size: 26px;
+					margin-bottom: 20px;
+					line-height: 50px;
+
+					&:hover > a {
+						background-color: #fdf4b1;
+					}
+					> a {
+						display: block;
+						height: 100%;
+						> i {
+							margin-right: 15px;
+						}
+					}
+				}
+			}
+		} //section.menu
+		> .friendsList {
+			width: 95%;
+			margin: 0 auto;
+			> ul {
+				> li {
+					&:nth-child(1),
+					&:nth-child(2),
+					&:nth-child(3) {
+						border-bottom: 1px solid #ccc;
+					}
+					&:nth-child(1) {
+						.thumb {
+							width: 70px;
+							height: 70px;
+						}
+					}
+					> a {
+						display: flex;
+						align-items: center;
+
+						.thumb {
+							width: 60px;
+							height: 60px;
+							border: 1px solid #000;
+							border-radius: 30%;
+							text-indent: -9999px;
+						}
+						> ol {
+							margin-left: 20px;
+							height: 40px;
+							border: 1px solid #000;
+							> li {
+								margin-bottom: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
 	} //end main
 
 	> footer {
+		position: relative;
 		height: 8%;
 		width: 100%;
 		border-top: 1px solid #ccc;
@@ -151,6 +227,22 @@
 				&:hover {
 					color: #ff6666;
 				}
+			}
+		} //end ul
+		> div {
+			> p {
+				position: absolute;
+				left: 40%;
+				top: 15px;
+				width: 20px;
+				height: 20px;
+				color: #fff;
+				line-height: 20px;
+				font-weight: 500;
+				text-align: center;
+				background-color: #ff0000;
+				border-radius: 50%;
+				transform: translate(-50%, 0);
 			}
 		}
 	} //end footer

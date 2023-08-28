@@ -61,32 +61,17 @@
 				letter-spacing: 2px;
 			} //end appTop_chat
 			> .appTop_icon {
-				width: 5%;
+				width: 10%;
+
+				> ul {
+					width: 
+					background-color: #e54545;
+					display: flex;
+					justify-content: space-between;
+				}
 			} //end appTop_icon
 		} //end appTop
-		> .menu {
-			height: 95%;
-			margin-left: 20px;
-			ul {
-				li {
-					height: 50px;
-					font-size: 26px;
-					letter-spacing: 5px;
-					margin-bottom: 40px;
-
-					line-height: 50px;
-					&:hover > a {
-						background-color: #fdf4b1;
-					}
-					> a {
-						display: block;
-						height: 100%;
-					}
-				}
-			}
-		} //end menu
-	} //end main
-
+	}
 	> footer {
 		height: 8%;
 		width: 100%;
