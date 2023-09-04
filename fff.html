@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>안녕</title>
+    <style>
+      @keyframes anibox {
+        from {
+          width: 100px;
+        } /*진행률 0% 시작 */
+        to {
+          width: 500px;
+        } /*진행률 100% 끝*/
+      }
+      p {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid #000;
+        animation: anibox 1s ease-in 0s infinite alternate forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <p></p>
+  </body>
+</html>

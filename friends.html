@@ -2,9 +2,10 @@
 <html lang="ko">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>마이카톡</title>
 		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/style2.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
@@ -14,138 +15,150 @@
 	<body>
 		<div id="wrap">
 			<header>
-				<div class="phoneTop">
-					<div class="phoneTop_wifi">
-						<ul>
-							<li>
-								<i class="fas fa-signal"></i>
-							</li>
-							<li>SKT</li>
-							<li>
-								<i class="fas fa-wifi"> </i>
-							</li>
-						</ul>
+				<div class="phone_top">
+					<div class="wifi">
+						<p><i class="fas fa-signal"> </i></p>
+						<p>SKT</p>
+						<p><i class="fas fa-wifi"> </i></p>
 					</div>
-					<div class="phoneTop_time">오후 13:54</div>
-					<div class="phoneTop_battery">
-						<ul>
-							<li>70%</li>
-							<li><i class="fas fa-battery-three-quarters"></i></li>
-						</ul>
+					<div class="time"><p>오후 13:54</p></div>
+					<div class="baterry">
+						<p>70%</p>
+						<p><i class="fas fa-battery-three-quarters"></i></p>
+					</div>
+				</div>
+
+				<div class="app_top">
+					<div class="category_name">
+						<p>친구들</p>
+						
+					</div>
+					<div class="tool">
+						<p><i class="fas fa-search"></i></p>
+						
+						<p>
+							<a href="./settings.html"><i class="fas fa-cog"></i></a>
+						</p>
 					</div>
 				</div>
 			</header>
-			<main>
-				<section class="appTop">
-					<div class="appTop_menu">
-						<p>친구들</p>
-					</div>
-					<div class="appTop_icon friends">
+
+			<section class="people">		
+					<div class="me">
 						<ul>
-							<li><i class="fas fa-search"></i></li>
-							<li><i class="fas fa-cog"></i></i></li>
+							<li>
+								<a href="#">
+								   <div class="thumb">
+									  인물사진
+								   </div>
+								   <p>
+									  전인배 <br>
+									  상태메세지
+								   </p>
+								</a>
+							 </li>
+	 
 						</ul>
 					</div>
-				</section>
-				<section class="friendsList">
-						
-					
-<ul>
-	<li>
-
-		<a href="#">
-		<div class="thumb">
-			인물사진
-		</div>
-	 <ol>
-		<li>전인배</li>
-		<li>상태메세지</li>
-	 </ol>
-	</a>
-</li>
-<li>
-<p>생일인 친구</p>
-	<a href="#">
-	<div class="thumb">
-		인물사진
-	</div>
- <ol>
-	<li>친구의 생일을 확인 해 보세요!</li>
- </ol>
-</a>
-</li>
-<li>
-<p>추천친구</p>
-	<a href="#">
-	<div class="thumb">
-		인물사진
-	</div>
- <ol>
-	<li>새로운 친구를 만나보세요!</li>
-
- </ol>
-</a>
-</li>
-<li>
-<p>친구</p>
-	<a href="#">
-	<div class="thumb">
-		인물사진
-	</div>
- <ol>
-	<li>전인배</li>
-	<li>상태메세지</li>
- </ol>
-</a>
-</li>
-<li>
-	<p>친구</p>
-		<a href="#">
-		<div class="thumb">
-			인물사진
-		</div>
-	 <ol>
-		<li>전인배</li>
-		<li>상태메세지</li>
-	 </ol>
-	</a>
-	</li>
-	<li>
-		<p>친구</p>
-			<a href="#">
-			<div class="thumb">
-				인물사진
-			</div>
-		 <ol>
-			<li>전인배</li>
-			<li>상태메세지</li>
-		 </ol>
-		</a>
-		</li>
-		<li>
-			<p>친구</p>
-				<a href="#">
-				<div class="thumb">
-					인물사진
+					<div class="notice">
+						<div class="notice1">
+							<p >생일인 친구</p>
+							<ul>
+								<li>
+									<a href="#">
+									   <div class="thumb">
+										  인물사진
+									   </div>
+									   <p>
+										  친구의 생일을 확인 해 보세요!
+									   </p>
+									</a>
+								</li>
+								 
+							</ul>	
+						</div>
+						<div class="notice2">
+							<p>추천친구</p>
+							<ul>
+								<li>
+									<a href="#">
+									<div class="thumb">
+										인물사진
+									</div>
+									<p>
+										새로운 친구를 만나보세요!
+									</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="friends">
+						<p >친구</p>
+						<ul>
+							<li>
+								<a href="#">
+								   <div class="thumb">
+									  인물사진
+								   </div>
+								   <p>
+									<span>66챌린지</span><br>
+									 도전! 7.10-9.13
+								   </p>
+								  
+								</a>
+							 </li>
+							 <li>
+								<a href="#">
+								   <div class="thumb">
+									  인물사진
+								   </div>
+								   <p>
+									  <span>PDS365 B6동</span> <br>
+									  소통왕 여러분 화이팅
+								   </p>
+								  
+								</a>
+							 </li>
+							 <li>
+								<a href="#">
+								   <div class="thumb">
+									  인물사진
+								   </div>
+								   <p>
+									<span>씽큐베이션</span> <br>
+									  씽큐베이션은 생각을 키우는 독서모임입니다. 
+								   </p>
+								  
+								</a>
+							 </li>
+							 <li>
+								<a href="#">
+								   <div class="thumb">
+									  인물사진
+								   </div>
+								   <p>
+									<span>영어독립반</span> <br>
+									  영어독립으로 광복하세요~~
+								   </p>
+								   
+								</a>
+							 </li>
+						  </ol>
+					   </li>
+					</ul>
 				</div>
-			 <ol>
-				<li>전인배</li>
-				<li>상태메세지</li>
-			 </ol>
-			</a>
-			</li>
-
-	
-</ul>
-				</section>
-			</main>
+			</section>
 			<footer>
 				<ul>
-					<li><i class="far fa-user"></i></li>
-					<li><i class="fa fa-solid fa-comment"></i></li>
-					<li><i class="fas fa-search"></i></li>
-					<li><i class="fas fa-ellipsis-h"></i></li>
+					<li><a href="./friends.html"><i class="far fa-user"></i></a></li>
+					<li><a href="./index.html"><i class="fa fa-solid fa-comment"></i></a></li>
+					<li><a href="search .html"><i class="fas fa-search"></a></i></li>
+					<li><a href="plus.html"><i class="fas fa-ellipsis-h"></a></i></li>
 				</ul>
+				<div>
+					<p>1</p>
+				</div>
 			</footer>
 		</div>
 	</body>

@@ -7,6 +7,16 @@
   height: 100%;
 }
 #wrap > header {
+  position: fixed;
+  z-index: 100;
+  height: 30%;
+  background-color: #ef1b1b;
+}
+#wrap > header.talk_bord_header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
   height: 5%;
 }
 #wrap > header > .phoneTop {
@@ -17,6 +27,14 @@
   padding-top: 10px;
   color: #080808;
   font-size: 16px;
+}
+#wrap > header > .phoneTop .talk_bord_phoneTop {
+  border: 1px solid #b71919;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
 }
 #wrap > header > .phoneTop > .phoneTop_wifi {
   width: 16%;
@@ -32,6 +50,50 @@
   display: flex;
   justify-content: space-between;
 }
+#wrap > header > .appTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px 0 20px;
+  font-size: 24px;
+}
+#wrap > header > .appTop.talk_bord_appTop {
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
+}
+#wrap > header > .appTop > .appTop_chat {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  height: 20%;
+  font-size: 28px;
+  font-weight: 500;
+}
+#wrap > header > .appTop > .appTop_chat > p:nth-child(2) {
+  font-weight: bold;
+  color: #ccc;
+}
+#wrap > header > .appTop > .appTop_icon {
+  width: 30%;
+}
+#wrap > header > .appTop > .appTop_icon > ul {
+  display: flex;
+  justify-content: space-between;
+}
+#wrap > header > .appTop > .appTop_icon > ul > li:nth-child(3):hover {
+  color: #ff0000;
+}
+#wrap > header > .appTop > .appTop_icon.friends {
+  width: 15%;
+}
+#wrap > header > .appTop > .appTop_icon.friends > ul {
+  justify-content: space-between;
+}
+#wrap > header > .appTop > .appTop_icon.settings ul {
+  justify-content: flex-end;
+}
 #wrap > main {
   display: flex;
   flex-direction: column;
@@ -44,6 +106,11 @@
   align-items: center;
   margin: 20px 20px 0 20px;
   font-size: 24px;
+}
+#wrap > main > .appTop.talk_bord_appTop {
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
 }
 #wrap > main > .appTop > .appTop_chat {
   display: flex;
@@ -141,35 +208,181 @@
 #wrap > main > section.menu ul li > a > i {
   margin-right: 15px;
 }
-#wrap > main > .friendsList {
+#wrap > main > .people {
   width: 95%;
+  height: 90%;
   margin: 0 auto;
 }
-#wrap > main > .friendsList > ul > li:nth-child(1), #wrap > main > .friendsList > ul > li:nth-child(2), #wrap > main > .friendsList > ul > li:nth-child(3) {
+#wrap > main > .people > .me {
   border-bottom: 1px solid #ccc;
 }
-#wrap > main > .friendsList > ul > li:nth-child(1) .thumb {
+#wrap > main > .people > .me > ul {
+  margin-bottom: 10px;
+}
+#wrap > main > .people > .me > ul > li > a {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+#wrap > main > .people > .me > ul > li > a .thumb {
   width: 70px;
   height: 70px;
+  margin-right: 10px;
+  text-indent: -9999px;
+  border: 1px solid #000;
+  border-radius: 30%;
 }
-#wrap > main > .friendsList > ul > li > a {
+#wrap > main > .people > .notice ul {
+  margin-bottom: 10px;
+}
+#wrap > main > .people > .notice ul > li > a {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+#wrap > main > .people > .notice ul > li > a .thumb {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-indent: -9999px;
+  border: 1px solid #000;
+  border-radius: 30%;
+}
+#wrap > main > .people > .notice > .notice1 {
+  border-bottom: 1px solid #ccc;
+}
+#wrap > main > .people > .notice > .notice1 > p {
+  margin: 10px 0;
+}
+#wrap > main > .people > .notice > .notice2 {
+  border-bottom: 1px solid #ccc;
+}
+#wrap > main > .people > .notice > .notice2 > p {
+  margin: 10px 0;
+}
+#wrap > main > .people > .friends {
+  height: 51.55555%;
+}
+#wrap > main > .people > .friends > p {
+  margin: 10px 0;
+}
+#wrap > main > .people > .friends > ul > li {
+  margin-bottom: 10px;
+}
+#wrap > main > .people > .friends > ul > li:hover > a {
+  background-color: #fdf4b1;
+}
+#wrap > main > .people > .friends > ul > li > a {
   display: flex;
   align-items: center;
 }
-#wrap > main > .friendsList > ul > li > a .thumb {
+#wrap > main > .people > .friends > ul > li > a .thumb {
   width: 60px;
   height: 60px;
+  margin-right: 10px;
+  text-indent: -9999px;
   border: 1px solid #000;
   border-radius: 30%;
+}
+#wrap > main > .talk_bord {
+  position: relative;
+  height: 100%;
+  margin-top: 30px;
+  background-color: #bacee0;
+}
+#wrap > main > .talk_bord > .talk_bord_date {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50px 50px 50px 50px;
+  transform: translate(-50%, 0);
+  box-shadow: 5px 5px 30px 0 #ccc;
+}
+#wrap > main > .talk_bord > .talk_bord_you {
+  display: flex;
+  position: absolute;
+  left: 10px;
+  top: 70px;
+}
+#wrap > main > .talk_bord > .talk_bord_you > .talk_bord_you_thumb {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
   text-indent: -9999px;
-}
-#wrap > main > .friendsList > ul > li > a > ol {
-  margin-left: 20px;
-  height: 40px;
   border: 1px solid #000;
+  border-radius: 50%;
 }
-#wrap > main > .friendsList > ul > li > a > ol > li {
+#wrap > main > .talk_bord > .talk_bord_you > .talk_bord_you_cont > .talk_bord_you_cont_name {
   margin-bottom: 5px;
+}
+#wrap > main > .talk_bord > .talk_bord_you > .talk_bord_you_cont > .talk_bord_you_cont_chat {
+  width: 60px;
+  height: 30px;
+  margin-left: 5px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px 10px 10px 10px;
+}
+#wrap > main > .talk_bord .talk_bord_me_cont {
+  position: absolute;
+  right: 10px;
+  top: 150px;
+  width: 60px;
+  height: 30px;
+  margin-left: 5px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fcfc00;
+  border-radius: 10px 10px 10px 10px;
+}
+#wrap > .keybord {
+  height: 40%;
+  border-top: 1px solid #999;
+}
+#wrap > .keybord > .sendbord {
+  display: flex;
+  background-color: #fafafa;
+}
+#wrap > .keybord > .sendbord > input {
+  order: 100;
+  display: block;
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid #fafafa;
+  border-radius: 50px 50px 50px 50px;
+}
+#wrap > .keybord > .sendbord > li > i {
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  margin-right: 10px;
+}
+#wrap > .keybord > .sendbord > li:nth-child(1) {
+  margin-left: 10px;
+  order: 10;
+}
+#wrap > .keybord > .sendbord > li:nth-child(2) {
+  margin-left: 5px;
+  order: 200;
+}
+#wrap > .keybord > .sendbord > li:nth-child(3) {
+  order: 300;
+}
+#wrap > .keybord > .sendkey {
+  width: 100%;
+  height: 100%;
+  background-image: url(./../images/keyboard.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #wrap > footer {
   position: relative;
@@ -206,4 +419,8 @@
   background-color: #ff0000;
   border-radius: 50%;
   transform: translate(-50%, 0);
+}
+#wrap > footer.chat {
+  height: 5%;
+  border: 1px solid #000;
 }/*# sourceMappingURL=style.css.map */
