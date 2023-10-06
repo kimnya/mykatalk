@@ -59,7 +59,7 @@
 #wrap > header > .app_top {
   display: flex;
   justify-content: space-between;
-  margin: 40px 20px;
+  margin: 30px 20px;
   font-size: 24px;
 }
 #wrap > header > .app_top > .category_name {
